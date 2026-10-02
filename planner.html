@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Planner | Alex Morgan</title>
+<meta name="description" content="Add, complete and delete academic tasks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html">Alex Morgan</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+
+<section class="wrap narrow page-head"><h1>Academic planner</h1><p>Add assignments and deadlines, tick them off when they're done, and delete the ones you no longer need.</p></section>
+<section class="wrap narrow">
+<form id="task-form" novalidate>
+<div class="row">
+<div class="field grow"><label for="task-input">Task</label><input id="task-input" type="text" maxlength="100" autocomplete="off" aria-describedby="task-error" placeholder="e.g. Submit database report"></div>
+<div class="field"><label for="task-due">Due date (optional)</label><input id="task-due" type="date"></div>
+<button class="btn" type="submit">Add task</button>
+</div>
+</form>
+<p id="task-error" class="msg error" role="alert" hidden></p>
+<p id="task-count" aria-live="polite"></p>
+<ul id="task-list" class="tasks"></ul>
+<p id="empty-state" class="empty">No tasks yet. Add your first assignment or deadline above.</p>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<p>&copy; <span id="year">2026</span> Alex Morgan</p>
+<ul class="social"><li><a href="https://github.com/your-username">GitHub</a></li><li><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></li></ul>
+</div></footer>
+<script src="js/main.js" defer></script><script src="js/planner.js" defer></script>
+</body>
+</html>

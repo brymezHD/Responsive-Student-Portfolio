@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Alex Morgan</title>
+<meta name="description" content="Send a message to Alex Morgan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="index.html">Alex Morgan</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</div></header>
+<main id="main">
+
+<section class="wrap narrow page-head"><h1>Contact me</h1><p>Have a question or an opportunity? Fill in the form and I'll reply within a few days. You can also email <a href="mailto:you@example.com">you@example.com</a>.</p></section>
+<section class="wrap narrow">
+<form id="contact-form" novalidate>
+<div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error"><span class="err" id="name-error"></span></div>
+<div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error"><span class="err" id="email-error"></span></div>
+<div class="field"><label for="phone">Phone number (digits only)</label><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="phone-error"><span class="err" id="phone-error"></span></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" aria-describedby="message-error"></textarea><span class="err" id="message-error"></span></div>
+<button class="btn" type="submit">Send message</button>
+</form>
+<div id="form-status" class="msg" tabindex="-1"></div>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<p>&copy; <span id="year">2026</span> Alex Morgan</p>
+<ul class="social"><li><a href="https://github.com/your-username">GitHub</a></li><li><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></li></ul>
+</div></footer>
+<script src="js/main.js" defer></script><script src="js/contact.js" defer></script>
+</body>
+</html>
